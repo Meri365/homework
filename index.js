@@ -3,8 +3,8 @@ function myFunction(x) {
   return Math.round(x * 100) / 100;
 }
 
-let a = myFunction(2.45678);
-console.log(a);
+let u = myFunction(2.45678);
+console.log(u);
 
 //2
 function isNumber(x) {
@@ -56,19 +56,18 @@ let e = replacespace('sdfg h j', ' ', '_');
 console.log(e);
 
 //8
-function myFunction(x, start) {
+function myFuncti(x, start) {
   if (start) {
     return x.substring(0, 3);
   } else {
     return x.substring(x.length - 3, x.length);
   }
 }
+let k = myFuncti('Hello world', true);
+let l = myFuncti('Hello world', false);
 
-let a = myFunction('Hello world', true);
-let b = myFunction('Hello world', false);
-
-console.log(a);
-console.log(b);
+console.log(k);
+console.log(l);
 
 //9
 function function9(str) {
@@ -84,8 +83,8 @@ function strLength(str) {
   return str.length;
 }
 
-let text = strLength('asd212');
-console.log(text);
+let tex = strLength('asd212');
+console.log(tex);
 
 //11
 function addToArray(array, val) {
@@ -100,15 +99,18 @@ console.log(numbers);
 function removeFromArray(nums) {
   return nums.pop();
 }
-removeFromArray(numbers);
+let v = removeFromArray(numbers);
+console.log(v);
+
 
 //13
-function findIndexGreaterThan10(arr){
-  return arr.findIndex(function(x){
+function findIndexGreaterThan10(arre){
+  return arre.findIndex(function(x){
     return x > 10;
   });
 }
-
+let ph = findIndexGreaterThan10([2,26,100])
+console.log(ph);
 //14
 function getEvenNumbers(arr) {
   return arr.filter(function(x){
@@ -116,14 +118,16 @@ function getEvenNumbers(arr) {
   });
 
 }
-getEvenNumbers(numbers);
+let f = getEvenNumbers(numbers);
+console.log(f);
 //15
 function getSum(arr){
   return arr.map(function(x){
     return x * 2;
   });
 }
-multyplyByTwo(numbers);
+let q = getSum(numbers);
+console.log(q);
 
 //16
 function getSum(arr) {
@@ -131,26 +135,27 @@ function getSum(arr) {
     return sum + x;
   },0);
 }
-getSum(numbers);
-
+let r = getSum(numbers);
+console.log(r);
 //17
 function containsEl(arr, el) {
   return arr.includes(el);
 }
-containsEl(numbers, 1);
-
+let rf = containsEl(numbers, 1);
+console.log(rf);
 //18
 function mergeArrays(arr1, arr2) {
   return arr1.concat(arr2);
 }
 let nums2 = [4, 5, 6, 7];
-mergeArrays(numbers, nums2);
-
+let bv = mergeArrays(numbers, nums2);
+console.log(bv);
 //19
 function  getSlice(arr) {
   return arr.slice(1,3);
 }
-getSlice(numbers);
+let as = getSlice(numbers);
+console.log(as);
 
 //20
 function sortAscending(arr) {
@@ -158,8 +163,8 @@ function sortAscending(arr) {
     return a - b;
   });
 }
-sortAscending(numbers);
- 
+let mn = sortAscending(numbers);
+ console.log(mn);
 //21
 function getObjectKeys(obj) {
   return Object.keys(obj);
@@ -170,18 +175,21 @@ const car ={
   color: "white"
 };
 
+console.log(getObjectKeys(car));
+
+
 //22
 function getObjectValues(obj) {
   return Object.values(obj);
 }
-getObjectValues(car);
-
+let zx = getObjectValues(car);
+console.log(zx);
  //23
  function hasKey(obj, key) {
   return obj.hasOwnProperty(key);
  }
- hasKey(car, "color");
-
+let sf = hasKey(car, "color");
+console.log(sf);
  //24
  function mergeObjects(obj1, obj2) {
   return { ...obj1, ...obj2 };
@@ -191,10 +199,13 @@ const car2 = {
   model: "700",
   color: "black"
 };
-mergeObjects(car, car2);
+let ob = mergeObjects(car, car2);
+console.log(ob);
+
 
 //25
 function getEnteries(obj) {
   return Object.entries(obj);
 }
-getEnteries(car);
+let bar = getEnteries(car);
+console.log(bar);
